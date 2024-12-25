@@ -11,6 +11,7 @@ ExtendedVector quick_sort(ExtendedVector vector)
     ExtendedVector left_vec = vector.vector_less_val(elem);
     ExtendedVector right_vec = vector.vector_larger_val(elem);
 
+
     if (left_vec.num_unique_elem() < 3 and left_vec.size() < 3)
     {
         ret_vec.push_front(left_vec);
